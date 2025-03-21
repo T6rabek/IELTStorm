@@ -28,12 +28,16 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
-              <Image
-                src="/images/about/about-light-01.png"
-                alt="About"
-                className="dark:hidden"
-                fill
-              />
+              <div className="relative h-full w-full">
+                <Image
+                  src="/images/about/about-light-01.png"
+                  alt="About"
+                  className="object-cover dark:hidden"
+                  fill
+                  style={{ clipPath: "inset(0px 0px 200px 0px)" }}
+                />
+              </div>
+
               <Image
                 src="/images/about/about-dark-01.png"
                 alt="About"
@@ -63,17 +67,18 @@ const About = () => {
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
                   New
                 </span>{" "}
-                SaaS Boilerplate for Next.js
+                IELTS preparation platform
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
                 A Complete Solution for
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  SaaS Startup
+                  Boring IELTS Preparation
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                iStorm is a complete solution for IELTS preparation. It is
+                designed to help you prepare for the IELTS exam in the most
+                efficient way possible.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -84,9 +89,13 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    React 18, Next.js 13 and TypeScript
+                    Easy to Use
                   </h3>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p>
+                    Our platform is designed with user-friendliness in mind,
+                    ensuring that you can navigate and utilize all features with
+                    ease.
+                  </p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -97,9 +106,13 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    Fully Customizable
+                    Comprehensive Resources
                   </h3>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p>
+                    Access a wide range of resources to help you prepare for
+                    every aspect of the IELTS exam.
+                  </p>
+                  <p></p>
                 </div>
               </div>
             </motion.div>
@@ -130,18 +143,18 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left md:w-1/2"
             >
-              <h4 className="font-medium uppercase text-black dark:text-white">
-                Launch Your SaaS Fast
-              </h4>
+              <h4 className="font-medium uppercase text-black dark:text-white"></h4>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
                 Packed with All Essential {"   "}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Integrations
+                  authentic materials
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                Our platform offers a variety of materials that are both
+                interesting and authentic, ensuring that you have access to the
+                best resources for your IELTS preparation. From practice tests
+                to study guides, we have everything you need to succeed.
               </p>
               <div>
                 <a

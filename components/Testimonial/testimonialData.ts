@@ -1,38 +1,33 @@
 import image1 from "@/public/images/user/user-01.png";
 import image2 from "@/public/images/user/user-02.png";
+import image3 from "@/public/images/user/user-03.png";
 import { Testimonial } from "@/types/testimonial";
-
 export const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "To'rabek Raufov",
+    designation: "IELTS 7.5",
+    username: "t.me/T6rabek",
     image: image1,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "IELTStorm helped me prepare in an engaging way! The lessons were fun, and the practice tests felt just like the real exam.",
   },
   {
     id: 2,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
-    image: image2,
+    name: "Abdulaziz Maxmaraimov",
+    designation: "IELTS 8.0",
+    username: "t.me/Abdulaziz_31206",
+    image: image3,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "This platform made IELTS prep so much easier! The interactive lessons and exercises were a game changer.",
   },
   {
     id: 3,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
-    image: image1,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
-  },
-  {
-    id: 4,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
+    name: "Shohjahon Jumayev",
+    designation: "IELTS 7.0",
+    username: "t.me/shokhaa_j",
     image: image2,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "I never enjoyed studying English until I used IELTStorm. The approach is unique, and the explanations are clear.",
   },
 ];

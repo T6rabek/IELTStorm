@@ -32,22 +32,18 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo.svg"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
-                    width={110}
+                    width={40}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/logo.svg"
                     alt="Logo"
                     className="hidden dark:block"
                   />
                 </a>
-
-                <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   contact
@@ -56,7 +52,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  t6rabek.raufov@gmail.com
                 </a>
               </motion.div>
 
@@ -108,14 +104,7 @@ const Footer = () => {
                         Careers
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Pricing
-                      </a>
-                    </li>
+                    <li></li>
                   </ul>
                 </motion.div>
 
@@ -301,7 +290,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} iStorm. All rights reserved
               </p>
             </motion.div>
 

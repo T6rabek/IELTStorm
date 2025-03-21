@@ -21,8 +21,8 @@ const Testimonial = () => {
             <SectionHeader
               headerInfo={{
                 title: `TESTIMONIALS`,
-                subtitle: `Client’s Testimonials`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                subtitle: `Our Students`,
+                description: `If they did it, so can you! See what our students say about IELTStorm.`,
               }}
             />
           </div>
@@ -54,7 +54,7 @@ const Testimonial = () => {
               spaceBetween={50}
               slidesPerView={2}
               autoplay={{
-                delay: 2500,
+                delay: 4500,
                 disableOnInteraction: false,
               }}
               pagination={{

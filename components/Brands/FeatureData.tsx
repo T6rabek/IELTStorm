@@ -1,6 +1,3 @@
-import { Feature } from "@/types/feature";
-import { write } from "fs";
-
 import {
   BookOpen,
   Gamepad2,
@@ -8,10 +5,14 @@ import {
   Film,
   Users,
   HeadphonesIcon,
-  Pen,
 } from "lucide-react"; // Import icons
 
-// Removed local declaration of Feature interface
+export interface Feature {
+  id: number;
+  title: string;
+  description: string;
+  icon: React.ComponentType<any>; // ✅ Fix icon type
+}
 
 const featureData: Feature[] = [
   {
@@ -37,19 +38,6 @@ const featureData: Feature[] = [
     title: "Reading",
     description: "Reading is not boring anymore with our interactive comics",
     icon: BookOpen,
-  },
-  {
-    id: 5,
-    title: "Writing",
-    description: "What do you think about already analyzed essays?",
-    icon: Pen,
-  },
-  {
-    id: 6,
-    title: "Speaking",
-    description:
-      "What if you find like-minded people through iStorm to prepare together?",
-    icon: Mic,
   },
 ];
 

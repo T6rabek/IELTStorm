@@ -32,9 +32,10 @@ const CTA = () => {
                 Join With Us Today & Increase Your Productivity
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
+                Discover the tools and techniques that will help you streamline
+                your workflow and achieve your goals faster. Our platform offers
+                a variety of features designed to enhance your productivity and
+                keep you on track.
               </p>
             </motion.div>
             <motion.div

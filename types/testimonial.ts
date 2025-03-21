@@ -5,4 +5,5 @@ export type Testimonial = {
   image: any;
   content: string;
   designation: string;
+  username: string;
 };
