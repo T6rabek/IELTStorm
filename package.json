@@ -38,8 +38,5 @@
     "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
-  },
-  "resolutions": {
-    "eslint": "^8.57.0"
   }
 }
