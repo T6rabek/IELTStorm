@@ -11,6 +11,7 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "iStorm",
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+      <Header />
       <Hero />
       <Feature />
       <About />

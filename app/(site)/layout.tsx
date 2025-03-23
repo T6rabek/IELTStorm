@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -25,10 +25,10 @@ export default function RootLayout({
           defaultTheme="light"
         >
           <Lines />
-          <Header />
+          {/* <Header /> */}
           <ToasterContext />
           {children}
-          <Footer />
+          {/* <Footer /> */}
           <ScrollToTop />
         </ThemeProvider>
       </body>

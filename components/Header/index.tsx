@@ -3,11 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
+  const router = useRouter();
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
@@ -129,7 +131,9 @@ const Header = () => {
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li key={key} className="hover:text-primary">
-                            <Link href={item.path || "#"}>{item.title}</Link>
+                            <Link href={item.path || "#"} prefetch={false}>
+                              {item.title}
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -154,19 +158,18 @@ const Header = () => {
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
 
-            <Link
-              href="/auth/signup"
+            <button
               className="text-regular font-medium text-waterloo hover:text-primary"
+              onClick={() => router.push("/auth/signup")}
             >
               Sign up
-            </Link>
-
-            <Link
-              href="/auth/signin"
-              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+            </button>
+            <button
+              className="text-regular font-medium text-waterloo hover:text-primary"
+              onClick={() => router.push("/auth/signin")}
             >
               Login
-            </Link>
+            </button>
           </div>
         </div>
       </div>
