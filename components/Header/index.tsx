@@ -164,12 +164,6 @@ const Header = () => {
             >
               Sign up
             </button>
-            <button
-              className="text-regular font-medium text-waterloo hover:text-primary"
-              onClick={() => router.push("/auth/signin")}
-            >
-              Login
-            </button>
           </div>
         </div>
       </div>
